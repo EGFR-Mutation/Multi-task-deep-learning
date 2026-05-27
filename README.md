@@ -154,8 +154,6 @@ Typical preprocessing includes:
 * Resampling to isotropic spacing
 * Intensity normalization
 * ROI cropping
-* Slice extraction
-* Multi-view generation (axial/coronal/sagittal)
 
 ---
 
