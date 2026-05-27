@@ -77,7 +77,7 @@ pip install -r requirements.txt
 Recommended package versions:
 
 ```text
-python==3.8
+python==3.9
 numpy==1.21.6
 pandas==1.3.5
 scikit-learn==1.0.2
