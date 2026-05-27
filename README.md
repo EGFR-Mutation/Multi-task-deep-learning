@@ -25,30 +25,30 @@ The repository includes:
 
 ```text
 .
-©À©¤©¤ biological mechanisms
-©¦   ©¸©¤©¤ biological mechanisms.R
-©¦
-©À©¤©¤ image preprocessing
-©¦   ©À©¤©¤ resample.py
-©¦   ©¸©¤©¤ test_csv.py
-©¦
-©À©¤©¤ model building
-©¦   ©À©¤©¤ baseline model
-©¦   ©À©¤©¤ multi-task
-©¦   ©¦   ©À©¤©¤ config_egfr.py
-©¦   ©¦   ©À©¤©¤ dataset_egfr_RU.py
-©¦   ©¦   ©¸©¤©¤ train_resnet_rec_2_0401.py
-©¦   ©¸©¤©¤ Radiomics
-©¦
-©À©¤©¤ visualization analysis
-©¦   ©À©¤©¤ T-SNE.py
-©¦   ©¸©¤©¤ test_grad_cam.py
-©¦
-©À©¤©¤ examples
-©¦   ©À©¤©¤ train_example.csv
-©¦   ©¸©¤©¤ inference_example.csv
-©¦
-©¸©¤©¤ README.md
+â”œâ”€â”€ biological mechanisms
+â”‚   â””â”€â”€ biological mechanisms.R
+â”‚
+â”œâ”€â”€ image preprocessing
+â”‚   â”œâ”€â”€ resample.py
+â”‚   â””â”€â”€ test_csv.py
+â”‚
+â”œâ”€â”€ model building
+â”‚   â”œâ”€â”€ baseline model
+â”‚   â”œâ”€â”€ multi-task
+â”‚   â”‚   â”œâ”€â”€ config_egfr.py
+â”‚   â”‚   â”œâ”€â”€ dataset_egfr_RU.py
+â”‚   â”‚   â””â”€â”€ train_resnet_rec_2_0401.py
+â”‚   â””â”€â”€ Radiomics
+â”‚
+â”œâ”€â”€ visualization analysis
+â”‚   â”œâ”€â”€ T-SNE.py
+â”‚   â””â”€â”€ test_grad_cam.py
+â”‚
+â”œâ”€â”€ examples
+â”‚   â”œâ”€â”€ train_example.csv
+â”‚   â””â”€â”€ inference_example.csv
+â”‚
+â””â”€â”€ README.md
 ```
 
 ---
@@ -124,20 +124,20 @@ The framework supports:
 
 ```text
 data
-©À©¤©¤ CT
-©¦   ©À©¤©¤ Patient_001.nii.gz
-©¦   ©À©¤©¤ Patient_002.nii.gz
-©¦   ©¸©¤©¤ ...
-©¦
-©À©¤©¤ Mask
-©¦   ©À©¤©¤ Patient_001.nii.gz
-©¦   ©À©¤©¤ Patient_002.nii.gz
-©¦   ©¸©¤©¤ ...
-©¦
-©¸©¤©¤ csv
-    ©À©¤©¤ train.csv
-    ©À©¤©¤ val.csv
-    ©¸©¤©¤ test.csv
+â”œâ”€â”€ CT
+â”‚   â”œâ”€â”€ Patient_001.nii.gz
+â”‚   â”œâ”€â”€ Patient_002.nii.gz
+â”‚   â””â”€â”€ ...
+â”‚
+â”œâ”€â”€ Mask
+â”‚   â”œâ”€â”€ Patient_001.nii.gz
+â”‚   â”œâ”€â”€ Patient_002.nii.gz
+â”‚   â””â”€â”€ ...
+â”‚
+â””â”€â”€ csv
+    â”œâ”€â”€ train.csv
+    â”œâ”€â”€ val.csv
+    â””â”€â”€ test.csv
 ```
 
 ### Image Resampling
@@ -318,12 +318,6 @@ Potential analyses include:
 * Pathway enrichment
 * Gene expression analysis
 * Biological correlation studies
-
----
-
-# License
-
-This repository is released under the MIT License.
 
 ---
 
