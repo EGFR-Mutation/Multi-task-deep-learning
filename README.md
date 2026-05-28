@@ -232,10 +232,10 @@ python train_resnet_rec_2_0401.py
 | Parameter      | Description                  | Default |
 | -------------- | ---------------------------- | ------- |
 | --batch_size   | Batch size                   | 16      |
-| --epochs       | Number of epochs             | 200     |
+| --epochs       | Number of epochs             | 150     |
 | --lr           | Learning rate                | 1e-4    |
-| --weight_decay | Weight decay                 | 1e-5    |
-| --num_workers  | Number of dataloader workers | 8       |
+| --weight_decay | Weight decay                 | 0.5     |
+| --num_workers  | Number of dataloader workers | 4       |
 
 ---
 
