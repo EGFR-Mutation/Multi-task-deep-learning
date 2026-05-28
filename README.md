@@ -169,7 +169,6 @@ Clinical/radiological features should be stored in CSV format.
 | image_path                   | string     | Path to CT image                                  | ./data/CT/P001.nii.gz   |
 | mask_path                    | string     | Path to tumor mask                                | ./data/Mask/P001.nii.gz |
 | label                        | int        | EGFR mutation label (0=wild-type, 1=mutant)       | 0                       |
-| age                          | int        | Patient age                                       | 63                      |
 | sex                          | int        | Sex (0=female, 1=male)                            | 1                       |
 | smoking                      | int        | Smoking history (0=never, 1=current or former)    | 0                       |
 | vascular_convergence         | int        | Tumor vascular convergence (0=absent, 1=present)  | 1                       |
@@ -195,16 +194,16 @@ These files demonstrate the exact CSV structure required for:
 ## Example Training CSV
 
 ```csv
-patient_id,image_path,mask_path,label,age,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
-P001,./data/CT/P001.nii.gz,./data/Mask/P001.nii.gz,1,63,1,0,1,1,0,0
-P002,./data/CT/P002.nii.gz,./data/Mask/P002.nii.gz,0,58,0,1,0,1,1,1
+patient_id,image_path,mask_path,label,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
+P001,./data/CT/P001.nii.gz,./data/Mask/P001.nii.gz,1,1,0,1,1,0,0
+P002,./data/CT/P002.nii.gz,./data/Mask/P002.nii.gz,0,0,1,0,1,1,1
 ```
 
 ## Example Inference CSV
 
 ```csv
-patient_id,image_path,mask_path,label,age,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
-P101,./data/CT/P101.nii.gz,./data/Mask/P101.nii.gz,67,1,1,0,1,0,1
+patient_id,image_path,mask_path,label,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
+P101,./data/CT/P101.nii.gz,./data/Mask/P101.nii.gz,1,1,0,1,0,1
 ```
 
 ---
