@@ -240,12 +240,10 @@ python train_resnet_rec_2_0401.py
 
 ## Output
 
-Inference outputs may include:
+Inference outputs include:
 
 * EGFR mutation probability
-* Binary classification result
-* Feature embeddings
-* Attention maps
+* Reconstructed CT images
 
 ---
 
