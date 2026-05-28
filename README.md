@@ -306,6 +306,7 @@ Example:
 ```bash
 cd "biological mechanisms"
 Rscript "biological mechanisms.R"
+```
 
 ---
 
