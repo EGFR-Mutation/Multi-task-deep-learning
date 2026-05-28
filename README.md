@@ -299,24 +299,20 @@ These scripts are used for:
 
 # Biological Mechanism Analysis
 
+The `biological mechanisms/` directory contains scripts for exploring the biological characteristics associated with EGFR mutation status in NSCLC. Differential expression analysis was performed using the **limma** package, followed by pathway enrichment with **clusterProfiler**, **ReactomePA**, and **org.Hs.eg.db**. Reactome GSEA, GO enrichment, and KEGG pathway analyses identify key biological processes and signaling pathways associated with EGFR mutations.
+
+Single-sample GSEA (ssGSEA) using **GSVA** quantifies immune-related and biological signature activities per sample. Visualization scripts generate enrichment plots, dot plots, boxplots, and pathway figures suitable for publication. ClueGO-based functional clustering is also included to explore grouped functional annotations and pathway interactions.
+
+Example usage:
+
+```bash
+cd "biological mechanisms"
+Rscript "biological mechanisms.R"
 Biological analysis scripts are located in:
 
 ```text
 biological mechanisms
 ```
-
-Run:
-
-```bash
-Rscript "biological mechanisms.R"
-```
-
-Potential analyses include:
-
-* Pathway enrichment
-* Gene expression analysis
-* Biological correlation studies
-
 ---
 
 # Contact
