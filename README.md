@@ -34,12 +34,17 @@ The repository includes:
 │
 ├── model building
 │   ├── baseline model
+│   │   ├── config_egfr.py
+│   │   ├── dataset_egfr.py
+│   │   ├── RseNer_U_baseline.py
+│   │   ├── basic_module.py
+│   │   └── train_baseline.py
 │   ├── multi-task
 │   │   ├── config_egfr.py
 │   │   ├── dataset_egfr_RU.py
 │   │   └── train_resnet_rec_2_0401.py
 │   └── Radiomics
-│   │   └── feature_extraction.py
+│       └── Radiomics_Features_Extraction.py
 │
 ├── visualization analysis
 │   ├── T-SNE.py
@@ -89,11 +94,6 @@ SimpleITK==2.1.1
 nibabel==3.2.2
 torch==1.10.1
 torchvision==0.11.2
-tqdm==4.64.1
-Pillow==9.2.0
-seaborn==0.12.2
-lifelines==0.27.4
-pyradiomics==3.0.1
 ```
 
 Example environment setup:
@@ -118,7 +118,6 @@ The framework supports:
 
 * `.nii`
 * `.nii.gz`
-* `.mhd`
 * `.nrrd`
 
 ### Recommended Directory Structure
@@ -173,11 +172,10 @@ Clinical/radiological features should be stored in CSV format.
 | age             | float/int  | Patient age               | 63                      |
 | sex             | int        | Sex (0=female, 1=male)    | 1                       |
 | smoking         | int        | Smoking history           | 0                       |
-| stage           | string/int | TNM stage                 | IIIA                    |
+| vascular convergence       | string/int | Tumor vascular convergence (0=absent, 1=present)                 | IIIA                    |
 | slice_thickness | float      | CT slice thickness        | 1.0                     |
-
+| slice_thickness | float      | CT slice thickness        | 1.0                     |
 ---
-
 # Example CSV Files
 
 We provide two example CSV files in the `examples/` folder:
