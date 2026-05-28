@@ -303,16 +303,12 @@ The `biological mechanisms/` directory contains scripts for exploring the biolog
 
 Single-sample GSEA (ssGSEA) using **GSVA** quantifies immune-related and biological signature activities per sample. Visualization scripts generate enrichment plots, dot plots, boxplots, and pathway figures suitable for publication. ClueGO-based functional clustering is also included to explore grouped functional annotations and pathway interactions.
 
-Example usage:
+Example:
 
 ```bash
 cd "biological mechanisms"
 Rscript "biological mechanisms.R"
-Biological analysis scripts are located in:
 
-```text
-biological mechanisms
-```
 ---
 
 # Contact
