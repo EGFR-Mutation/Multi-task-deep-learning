@@ -163,19 +163,22 @@ Clinical/radiological features should be stored in CSV format.
 
 ## Required CSV Columns
 
-| Column Name     | Data Type  | Description               | Example                 |
-| --------------- | ---------- | ------------------------- | ----------------------- |
-| patient_id      | string     | Unique patient identifier | P001                    |
-| image_path      | string     | Path to CT image          | ./data/CT/P001.nii.gz   |
-| mask_path       | string     | Path to tumor mask        | ./data/Mask/P001.nii.gz |
-| label           | int        | EGFR mutation label       | 0                       |
-| age             | float/int  | Patient age               | 63                      |
-| sex             | int        | Sex (0=female, 1=male)    | 1                       |
-| smoking         | int        | Smoking history           | 0                       |
-| vascular convergence       | string/int | Tumor vascular convergence (0=absent, 1=present)                 | IIIA                    |
-| slice_thickness | float      | CT slice thickness        | 1.0                     |
-| slice_thickness | float      | CT slice thickness        | 1.0                     |
+| Column Name                  | Data Type  | Description                                       | Example                 |
+| -----------------------------| ---------- | --------------------------------------------------| ----------------------- |
+| patient_id                   | string     | Unique patient identifier                         | P001                    |
+| image_path                   | string     | Path to CT image                                  | ./data/CT/P001.nii.gz   |
+| mask_path                    | string     | Path to tumor mask                                | ./data/Mask/P001.nii.gz |
+| label                        | int        | EGFR mutation label (0=wild-type, 1=mutant)       | 0                       |
+| age                          | int        | Patient age                                       | 63                      |
+| sex                          | int        | Sex (0=female, 1=male)                            | 1                       |
+| smoking                      | int        | Smoking history (0=never, 1=current or former)    | 0                       |
+| vascular_convergence         | int        | Tumor vascular convergence (0=absent, 1=present)  | 1                       |
+| texture                      | int        | Tumor texture (0=subsolid, 1=solid)               | 1                       |
+| pleural_retraction           | int        | Tumor pleural retraction (0=absent, 1=present)    | 1                       |
+| histology                    | int        | Tumor histology  (0=adenocarcinoma, 1=SCC)        | 0                       |
+
 ---
+
 # Example CSV Files
 
 We provide two example CSV files in the `examples/` folder:
