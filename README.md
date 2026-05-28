@@ -195,16 +195,16 @@ These files demonstrate the exact CSV structure required for:
 ## Example Training CSV
 
 ```csv
-patient_id,image_path,mask_path,label,age,sex,smoking,stage,slice_thickness
-P001,./data/CT/P001.nii.gz,./data/Mask/P001.nii.gz,1,63,1,0,IIIA,1.0
-P002,./data/CT/P002.nii.gz,./data/Mask/P002.nii.gz,0,58,0,1,IIIB,1.0
+patient_id,image_path,mask_path,label,age,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
+P001,./data/CT/P001.nii.gz,./data/Mask/P001.nii.gz,1,63,1,0,1,1,0,0
+P002,./data/CT/P002.nii.gz,./data/Mask/P002.nii.gz,0,58,0,1,0,1,1,1
 ```
 
 ## Example Inference CSV
 
 ```csv
-patient_id,image_path,mask_path,age,sex,smoking,stage,slice_thickness
-P101,./data/CT/P101.nii.gz,./data/Mask/P101.nii.gz,67,1,1,IIIA,1.0
+patient_id,image_path,mask_path,label,age,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
+P101,./data/CT/P101.nii.gz,./data/Mask/P101.nii.gz,67,1,1,0,1,0,1
 ```
 
 ---
