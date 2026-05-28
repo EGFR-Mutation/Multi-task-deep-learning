@@ -292,7 +292,6 @@ python test_grad_cam.py
 
 These scripts are used for:
 
-* Feature distribution visualization
 * Model interpretability analysis
 * Tumor attention localization
 
