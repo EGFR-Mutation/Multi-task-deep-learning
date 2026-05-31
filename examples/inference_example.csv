@@ -1,0 +1,2 @@
+patient_id,image_path,mask_path,label,sex,smoking,vascular_convergence,texture,pleural_retraction,histology
+P101,./data/CT/P101.nii.gz,./data/Mask/P101.nii.gz,1,1,0,1,0,1,
