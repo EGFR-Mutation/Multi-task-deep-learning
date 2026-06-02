@@ -103,7 +103,6 @@ conda create -n egfr_mt python=3.9
 conda activate egfr_mt
 
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
-pip install -r requirements.txt
 ```
 
 ---
